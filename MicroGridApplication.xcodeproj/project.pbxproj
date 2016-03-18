@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3980C398B0555DE8081B7C5F /* Pods_MicroGridApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D190D148E15CCE7CEC785EA0 /* Pods_MicroGridApplication.framework */; };
 		E1A294F31C9B9C2300818EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A294F21C9B9C2300818EAA /* AppDelegate.swift */; };
 		E1A294F51C9B9C2300818EAA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A294F41C9B9C2300818EAA /* RootViewController.swift */; };
 		E1A294F81C9B9C2300818EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A294F61C9B9C2300818EAA /* Main.storyboard */; };
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		569CA4DAF96E1C2DD5592807 /* Pods-MicroGridApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroGridApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-MicroGridApplication/Pods-MicroGridApplication.release.xcconfig"; sourceTree = "<group>"; };
+		C14147FED2612551B9A50FBC /* Pods-MicroGridApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroGridApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MicroGridApplication/Pods-MicroGridApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		D190D148E15CCE7CEC785EA0 /* Pods_MicroGridApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicroGridApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A294EF1C9B9C2300818EAA /* MicroGridApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroGridApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A294F21C9B9C2300818EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A294F41C9B9C2300818EAA /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3980C398B0555DE8081B7C5F /* Pods_MicroGridApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D4B3A2EC57F6293C5D9E95F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C14147FED2612551B9A50FBC /* Pods-MicroGridApplication.debug.xcconfig */,
+				569CA4DAF96E1C2DD5592807 /* Pods-MicroGridApplication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		509F10BEEB454BB2817E8567 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D190D148E15CCE7CEC785EA0 /* Pods_MicroGridApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1A294E61C9B9C2300818EAA = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +111,8 @@
 				E1A295061C9B9C2300818EAA /* MicroGridApplicationTests */,
 				E1A295111C9B9C2300818EAA /* MicroGridApplicationUITests */,
 				E1A294F01C9B9C2300818EAA /* Products */,
+				0D4B3A2EC57F6293C5D9E95F /* Pods */,
+				509F10BEEB454BB2817E8567 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +139,7 @@
 				E1A294F91C9B9C2300818EAA /* Assets.xcassets */,
 				E1A294FB1C9B9C2300818EAA /* LaunchScreen.storyboard */,
 				E1A294FE1C9B9C2300818EAA /* Info.plist */,
+				E1A295281C9C8BDA00818EAA /* Supporting Files */,
 			);
 			path = MicroGridApplication;
 			sourceTree = "<group>";
@@ -137,6 +162,13 @@
 			path = MicroGridApplicationUITests;
 			sourceTree = "<group>";
 		};
+		E1A295281C9C8BDA00818EAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1A295171C9B9C2300818EAA /* Build configuration list for PBXNativeTarget "MicroGridApplication" */;
 			buildPhases = (
+				2F98EEAB33818B2B1BA0C6E1 /* Check Pods Manifest.lock */,
 				E1A294EB1C9B9C2300818EAA /* Sources */,
 				E1A294EC1C9B9C2300818EAA /* Frameworks */,
 				E1A294ED1C9B9C2300818EAA /* Resources */,
+				39844175C1E0732EB714EF93 /* Embed Pods Frameworks */,
+				BCAB959F62E10628371CC3AA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +300,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F98EEAB33818B2B1BA0C6E1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		39844175C1E0732EB714EF93 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MicroGridApplication/Pods-MicroGridApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCAB959F62E10628371CC3AA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MicroGridApplication/Pods-MicroGridApplication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1A294EB1C9B9C2300818EAA /* Sources */ = {
@@ -416,6 +499,7 @@
 		};
 		E1A295181C9B9C2300818EAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C14147FED2612551B9A50FBC /* Pods-MicroGridApplication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MicroGridApplication/Info.plist;
@@ -427,6 +511,7 @@
 		};
 		E1A295191C9B9C2300818EAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569CA4DAF96E1C2DD5592807 /* Pods-MicroGridApplication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MicroGridApplication/Info.plist;
@@ -503,6 +588,7 @@
 				E1A295191C9B9C2300818EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1A2951A1C9B9C2300818EAA /* Build configuration list for PBXNativeTarget "MicroGridApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +597,7 @@
 				E1A2951C1C9B9C2300818EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1A2951D1C9B9C2300818EAA /* Build configuration list for PBXNativeTarget "MicroGridApplicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +606,7 @@
 				E1A2951F1C9B9C2300818EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class EnergyViewController: UIViewController {
 
     override func viewDidLoad() {
