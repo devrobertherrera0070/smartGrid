@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E1A294F31C9B9C2300818EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A294F21C9B9C2300818EAA /* AppDelegate.swift */; };
-		E1A294F51C9B9C2300818EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A294F41C9B9C2300818EAA /* ViewController.swift */; };
+		E1A294F51C9B9C2300818EAA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A294F41C9B9C2300818EAA /* RootViewController.swift */; };
 		E1A294F81C9B9C2300818EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A294F61C9B9C2300818EAA /* Main.storyboard */; };
 		E1A294FA1C9B9C2300818EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A294F91C9B9C2300818EAA /* Assets.xcassets */; };
 		E1A294FD1C9B9C2300818EAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A294FB1C9B9C2300818EAA /* LaunchScreen.storyboard */; };
 		E1A295081C9B9C2300818EAA /* MicroGridApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A295071C9B9C2300818EAA /* MicroGridApplicationTests.swift */; };
 		E1A295131C9B9C2300818EAA /* MicroGridApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A295121C9B9C2300818EAA /* MicroGridApplicationUITests.swift */; };
+		E1A295211C9BAFFE00818EAA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A295201C9BAFFE00818EAA /* WeatherViewController.swift */; };
+		E1A295231C9BB00700818EAA /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A295221C9BB00700818EAA /* NetworkViewController.swift */; };
+		E1A295251C9BB01100818EAA /* EnergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A295241C9BB01100818EAA /* EnergyViewController.swift */; };
+		E1A295271C9BB01E00818EAA /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A295261C9BB01E00818EAA /* StatisticsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		E1A294EF1C9B9C2300818EAA /* MicroGridApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroGridApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A294F21C9B9C2300818EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1A294F41C9B9C2300818EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1A294F41C9B9C2300818EAA /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E1A294F71C9B9C2300818EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1A294F91C9B9C2300818EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1A294FC1C9B9C2300818EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		E1A2950E1C9B9C2300818EAA /* MicroGridApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroGridApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A295121C9B9C2300818EAA /* MicroGridApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroGridApplicationUITests.swift; sourceTree = "<group>"; };
 		E1A295141C9B9C2300818EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A295201C9BAFFE00818EAA /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		E1A295221C9BB00700818EAA /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		E1A295241C9BB01100818EAA /* EnergyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnergyViewController.swift; sourceTree = "<group>"; };
+		E1A295261C9BB01E00818EAA /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				E1A294F21C9B9C2300818EAA /* AppDelegate.swift */,
-				E1A294F41C9B9C2300818EAA /* ViewController.swift */,
+				E1A294F41C9B9C2300818EAA /* RootViewController.swift */,
+				E1A295201C9BAFFE00818EAA /* WeatherViewController.swift */,
+				E1A295221C9BB00700818EAA /* NetworkViewController.swift */,
+				E1A295241C9BB01100818EAA /* EnergyViewController.swift */,
+				E1A295261C9BB01E00818EAA /* StatisticsViewController.swift */,
 				E1A294F61C9B9C2300818EAA /* Main.storyboard */,
 				E1A294F91C9B9C2300818EAA /* Assets.xcassets */,
 				E1A294FB1C9B9C2300818EAA /* LaunchScreen.storyboard */,
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A294F51C9B9C2300818EAA /* ViewController.swift in Sources */,
+				E1A294F51C9B9C2300818EAA /* RootViewController.swift in Sources */,
+				E1A295211C9BAFFE00818EAA /* WeatherViewController.swift in Sources */,
 				E1A294F31C9B9C2300818EAA /* AppDelegate.swift in Sources */,
+				E1A295271C9BB01E00818EAA /* StatisticsViewController.swift in Sources */,
+				E1A295231C9BB00700818EAA /* NetworkViewController.swift in Sources */,
+				E1A295251C9BB01100818EAA /* EnergyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
